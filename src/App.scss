@@ -1,0 +1,36 @@
+html, body {
+  background: #d3d3d3;
+}
+
+.App {
+  background: #d3d3d3;
+  text-align: center;
+}
+
+header {
+  background: #4254f4;
+
+  a, a:active, a:visited {
+    color: #fff;
+  }
+
+  a:first-of-type {
+    margin-right: 24px;
+  }
+}
+
+form, table, section {
+  background: #fff;
+}
+
+form {
+  padding: 5px;
+}
+
+h2 {
+  color: #fff;
+}
+
+th:first-of-type {
+  width: 40%;
+}
