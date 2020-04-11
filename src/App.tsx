@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Table from 'react-bootstrap/Table'
+import Alert from 'react-bootstrap/Table'
 
 import {
   BrowserRouter as Router,
@@ -50,6 +51,12 @@ function App() {
     setjbGames({...jbGames, [newValue.name] : newValue.checked });
   }
 
+  const filteredList = gamesList && gamesList.length > 0 && gamesList.filter((game) => {
+    return !players || (game.min_players <= players  && players <= game.max_players);
+  }).filter((game) => {
+    return jbGames[game.pack];
+  });
+
   return (
     <div className="App">
       <Router>
@@ -76,7 +83,7 @@ function App() {
               </Row>
               <Row>
                 <Col>
-                  {!!gamesList && !!gamesList.length && (
+                  {!!filteredList && !!filteredList.length && (
                     <Table striped bordered hover size="sm">
                       <thead>
                         <tr>
@@ -91,11 +98,7 @@ function App() {
                         </tr>
                       </thead>
                       <tbody>
-                        {gamesList.filter((game) => {
-                          return !players || (game.min_players <= players  && players <= game.max_players);
-                        }).filter((game) => {
-                          return jbGames[game.pack];
-                        }).map(game => (
+                        {filteredList.map(game => (
                           <Game
                             key={game.id}
                             title={game.title}
@@ -114,6 +117,11 @@ function App() {
                         ))}
                       </tbody>
                     </Table>
+                  )}
+                  {!filteredList || filteredList.length === 0 && (
+                    <Alert variant="warning">
+                      No results found, please adjust your filters
+                    </Alert>
                   )}
                 </Col>
               </Row>
