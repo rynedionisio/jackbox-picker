@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'supria-sans-heavy';
+  src: local('supria-sans-heavy'), url(./fonts/supria-sans-heavy.otf) format('opentype');
+}
+
 html, body {
   background: #d3d3d3;
 }
@@ -9,6 +14,7 @@ html, body {
 
 header {
   background: #4254f4;
+  padding: 5px 0;
 
   a, a:active, a:visited {
     color: #fff;
@@ -29,6 +35,7 @@ form, section {
 
 h2 {
   color: #fff;
+  font-family: 'supria-sans-heavy';
 }
 
 th:first-of-type {

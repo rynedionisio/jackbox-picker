@@ -28,7 +28,8 @@ function App() {
     3: true,
     4: true,
     5: true,
-    6: true
+    6: true,
+    22: true
   });
 
   const hideMobileCell = "d-none d-md-table-cell";
@@ -93,7 +94,7 @@ function App() {
                         {gamesList.filter((game) => {
                           return !players || (game.min_players <= players  && players <= game.max_players);
                         }).filter((game) => {
-                          return jbGames[game.pack] || game.title === "Drawful 2";
+                          return jbGames[game.pack];
                         }).map(game => (
                           <Game
                             key={game.id}

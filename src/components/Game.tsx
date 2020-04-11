@@ -36,7 +36,9 @@ const Game: React.FC<Types.GamesAppInterface> = (
         }
       </td>
       <td>
-        {pack}
+        {pack === 22
+          ? 'n/a'
+          : pack}
       </td>
       <td>
         {min_players}-{max_players}
