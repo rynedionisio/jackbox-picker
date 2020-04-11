@@ -17,7 +17,7 @@ const Header = () => {
             <Image src={require("../images/ydkjhead-small.png")} fluid alt={"You Don't Know Jack head"} />
           </Col>
           <Col>
-            <h2>Unofficial Jackbox selector</h2>
+            <h2>Jackbox pack selector</h2>
 
             <Link to="/">Home</Link><Link to="/about">About</Link>
           </Col>
