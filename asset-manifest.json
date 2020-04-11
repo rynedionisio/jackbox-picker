@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jackbox-picker/static/css/main.debe100f.chunk.css",
-    "main.js": "/jackbox-picker/static/js/main.883262cd.chunk.js",
-    "main.js.map": "/jackbox-picker/static/js/main.883262cd.chunk.js.map",
+    "main.css": "/jackbox-picker/static/css/main.a6451731.chunk.css",
+    "main.js": "/jackbox-picker/static/js/main.16cf02f0.chunk.js",
+    "main.js.map": "/jackbox-picker/static/js/main.16cf02f0.chunk.js.map",
     "runtime-main.js": "/jackbox-picker/static/js/runtime-main.6a957121.js",
     "runtime-main.js.map": "/jackbox-picker/static/js/runtime-main.6a957121.js.map",
     "static/css/2.de424728.chunk.css": "/jackbox-picker/static/css/2.de424728.chunk.css",
     "static/js/2.3c06342e.chunk.js": "/jackbox-picker/static/js/2.3c06342e.chunk.js",
     "static/js/2.3c06342e.chunk.js.map": "/jackbox-picker/static/js/2.3c06342e.chunk.js.map",
     "index.html": "/jackbox-picker/index.html",
-    "precache-manifest.2d0e8fdcfbb2d55f6ba77e6e58d0093a.js": "/jackbox-picker/precache-manifest.2d0e8fdcfbb2d55f6ba77e6e58d0093a.js",
+    "precache-manifest.2f2cd89ef792a06a3a76ea19d0175233.js": "/jackbox-picker/precache-manifest.2f2cd89ef792a06a3a76ea19d0175233.js",
     "service-worker.js": "/jackbox-picker/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/jackbox-picker/static/css/2.de424728.chunk.css.map",
-    "static/css/main.debe100f.chunk.css.map": "/jackbox-picker/static/css/main.debe100f.chunk.css.map",
+    "static/css/main.a6451731.chunk.css.map": "/jackbox-picker/static/css/main.a6451731.chunk.css.map",
     "static/js/2.3c06342e.chunk.js.LICENSE.txt": "/jackbox-picker/static/js/2.3c06342e.chunk.js.LICENSE.txt",
     "static/media/civic.jpg": "/jackbox-picker/static/media/civic.340ae1f7.jpg",
     "static/media/drawful2.jpg": "/jackbox-picker/static/media/drawful2.3b85f4d1.jpg",
@@ -22,6 +22,7 @@
     "static/media/mad.jpg": "/jackbox-picker/static/media/mad.e3291d79.jpg",
     "static/media/monster.jpg": "/jackbox-picker/static/media/monster.dc65d347.jpg",
     "static/media/patently.png": "/jackbox-picker/static/media/patently.1fbdaae9.png",
+    "static/media/supria-sans-heavy.otf": "/jackbox-picker/static/media/supria-sans-heavy.72dabfd7.otf",
     "static/media/teeko.jpg": "/jackbox-picker/static/media/teeko.ae47f7d6.jpg",
     "static/media/ydkjfs.png": "/jackbox-picker/static/media/ydkjfs.0c63bcd3.png"
   },
@@ -29,7 +30,7 @@
     "static/js/runtime-main.6a957121.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.3c06342e.chunk.js",
-    "static/css/main.debe100f.chunk.css",
-    "static/js/main.883262cd.chunk.js"
+    "static/css/main.a6451731.chunk.css",
+    "static/js/main.16cf02f0.chunk.js"
   ]
 }
