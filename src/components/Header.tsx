@@ -19,7 +19,7 @@ const Header = () => {
           <Col>
             <h2>Jackbox pack selector</h2>
 
-            <Link to="/">Home</Link><Link to="/about">About</Link>
+            <Link to="/jackbox-picker">Home</Link><Link to="/jackbox-picker/about">About</Link>
           </Col>
         </Row>
       </Container>

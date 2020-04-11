@@ -60,10 +60,10 @@ function App() {
             </Col>
           </Row>
           <Switch>
-            <Route path="/about">
+            <Route path="/jackbox-picker/about">
               <About />
             </Route>
-            <Route path="/">
+            <Route path="/jackbox-picker">
               <Row>
                 <Col>
                   <Filter
