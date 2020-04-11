@@ -338,7 +338,7 @@
   {
     "id": 27,
     "title": "Role Models",
-    "pack": 5,
+    "pack": 6,
     "min_players": 3,
     "max_players": 6,
     "extended_timers": true,
@@ -351,7 +351,7 @@
   {
     "id": 28,
     "title": "Joke Boat",
-    "pack": 5,
+    "pack": 6,
     "min_players": 3,
     "max_players": 8,
     "extended_timers": true,
@@ -364,7 +364,7 @@
   {
     "id": 29,
     "title": "Dictionarium",
-    "pack": 5,
+    "pack": 6,
     "min_players": 3,
     "max_players": 8,
     "extended_timers": true,
@@ -377,7 +377,7 @@
   {
     "id": 30,
     "title": "Push the Button",
-    "pack": 5,
+    "pack": 6,
     "min_players": 4,
     "max_players": 10,
     "extended_timers": false,
