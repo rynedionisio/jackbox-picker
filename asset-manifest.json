@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jackbox-picker/static/css/main.d388ae4b.chunk.css",
+    "main.css": "/jackbox-picker/static/css/main.debe100f.chunk.css",
     "main.js": "/jackbox-picker/static/js/main.30e94031.chunk.js",
     "main.js.map": "/jackbox-picker/static/js/main.30e94031.chunk.js.map",
     "runtime-main.js": "/jackbox-picker/static/js/runtime-main.6a957121.js",
@@ -9,10 +9,10 @@
     "static/js/2.3c06342e.chunk.js": "/jackbox-picker/static/js/2.3c06342e.chunk.js",
     "static/js/2.3c06342e.chunk.js.map": "/jackbox-picker/static/js/2.3c06342e.chunk.js.map",
     "index.html": "/jackbox-picker/index.html",
-    "precache-manifest.7d65b4e54e79c2692bff7959a705ede3.js": "/jackbox-picker/precache-manifest.7d65b4e54e79c2692bff7959a705ede3.js",
+    "precache-manifest.455c0ed8cd0ace9aa93445f2207685cf.js": "/jackbox-picker/precache-manifest.455c0ed8cd0ace9aa93445f2207685cf.js",
     "service-worker.js": "/jackbox-picker/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/jackbox-picker/static/css/2.de424728.chunk.css.map",
-    "static/css/main.d388ae4b.chunk.css.map": "/jackbox-picker/static/css/main.d388ae4b.chunk.css.map",
+    "static/css/main.debe100f.chunk.css.map": "/jackbox-picker/static/css/main.debe100f.chunk.css.map",
     "static/js/2.3c06342e.chunk.js.LICENSE.txt": "/jackbox-picker/static/js/2.3c06342e.chunk.js.LICENSE.txt",
     "static/media/civic.jpg": "/jackbox-picker/static/media/civic.340ae1f7.jpg",
     "static/media/drawful2.jpg": "/jackbox-picker/static/media/drawful2.3b85f4d1.jpg",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.6a957121.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.3c06342e.chunk.js",
-    "static/css/main.d388ae4b.chunk.css",
+    "static/css/main.debe100f.chunk.css",
     "static/js/main.30e94031.chunk.js"
   ]
 }
