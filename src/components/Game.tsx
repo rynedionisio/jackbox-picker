@@ -16,7 +16,8 @@ const Game: React.FC<Types.GamesAppInterface> = (
   audience,
   drawing,
   game_length,
-  show_images }
+  show_images,
+  steam_id }
 ) => {
 
   const BooleanEmoji = (checkValue: boolean) => {
@@ -26,14 +27,17 @@ const Game: React.FC<Types.GamesAppInterface> = (
   }
 
   const hideMobileCell = "d-none d-md-table-cell";
+  const steamLink = "steam://run/" + steam_id;
 
   return (
     <tr>
       <td>
-        {show_images
-          ? <Image src={require("../images/" + img)} fluid alt={title} />
-          : title
-        }
+        <a href={steamLink}>
+          {show_images
+            ? <Image src={require("../images/" + img)} fluid alt={title} />
+            : title
+          }
+        </a>
       </td>
       <td>
         {pack === 22

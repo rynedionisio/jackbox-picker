@@ -64,6 +64,7 @@ const Filter: React.FC<Types.FilterInterface> = (
 
   return (
     <Form>
+      <p>Enter your filter criteria below. Clicking a game image will launch that pack in Steam.</p>
       Select your Jackbox Packs:
       <Form.Group>
         {
@@ -82,10 +83,11 @@ const Filter: React.FC<Types.FilterInterface> = (
         }
       </Form.Group>
       <Form.Group controlId="players-input">
-        <Form.Label>Enter number of players:</Form.Label>
         <Form.Control
           onChange={handlePlayersChange}
           type="tel"
+          placeholder="Number of players"
+          aria-label="Number of players"
         />
       </Form.Group>
       <Form.Check 

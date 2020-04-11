@@ -11,6 +11,7 @@ namespace Types {
     audience: boolean;
     drawing: boolean;
     game_length?: number;
+    steam_id: number;
   }
 
   export interface EmojiInterface {

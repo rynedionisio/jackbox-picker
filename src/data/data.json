@@ -10,7 +10,8 @@
     "family_mode": false,
     "audience": false,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 331670
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "family_mode": false,
     "audience": false,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 331670
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "family_mode": false,
     "audience": false,
     "drawing": true,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 331670
   },
   {
     "id": 4,
@@ -48,7 +51,8 @@
     "img": "word.jpg",
     "family_mode": false,
     "audience": false,
-    "drawing": false
+    "drawing": false,
+    "steam_id": 331670
   },
   {
     "id": 5,
@@ -60,7 +64,8 @@
     "img": "lie.jpg",
     "family_mode": false,
     "audience": false,
-    "drawing": false
+    "drawing": false,
+    "steam_id": 331670
   },
   {
     "id": 6,
@@ -73,7 +78,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 397460
   },
   {
     "id": 7,
@@ -86,7 +92,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 397460
   },
   {
     "id": 8,
@@ -99,7 +106,8 @@
     "family_mode": false,
     "audience": false,
     "drawing": true,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 397460
   },
   {
     "id": 9,
@@ -112,7 +120,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 397460
   },
   {
     "id": 10,
@@ -125,7 +134,8 @@
     "family_mode": false,
     "audience": false,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 397460
   },
   {
     "id": 11,
@@ -138,7 +148,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 15
+    "game_length": 15,
+    "steam_id": 434170
   },
   {
     "id": 12,
@@ -151,7 +162,8 @@
     "family_mode": false,
     "audience": true,
     "drawing": true,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 434170
   },
   {
     "id": 13,
@@ -164,7 +176,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 15
+    "game_length": 15,
+    "steam_id": 434170
   },
   {
     "id": 14,
@@ -177,7 +190,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 434170
   },
   {
     "id": 15,
@@ -190,7 +204,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": true,
-    "game_length": 30
+    "game_length": 30,
+    "steam_id": 434170
   },
   {
     "id": 16,
@@ -203,7 +218,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 610180
   },
   {
     "id": 17,
@@ -216,7 +232,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 610180
   },
   {
     "id": 18,
@@ -229,7 +246,8 @@
     "family_mode": false,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 610180
   },
   {
     "id": 19,
@@ -242,7 +260,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 610180
   },
   {
     "id": 20,
@@ -255,7 +274,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": true,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 610180
   },
   {
     "id": 21,
@@ -268,7 +288,8 @@
     "family_mode": false,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 774461
   },
   {
     "id": 22,
@@ -281,7 +302,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 15
+    "game_length": 15,
+    "steam_id": 774461
   },
   {
     "id": 23,
@@ -294,7 +316,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 774461
   },
   {
     "id": 24,
@@ -307,7 +330,8 @@
     "family_mode": true,
     "audience": false,
     "drawing": false,
-    "game_length": 10
+    "game_length": 10,
+    "steam_id": 774461
   },
   {
     "id": 25,
@@ -320,7 +344,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": true,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 774461
   },
   {
     "id": 26,
@@ -333,7 +358,8 @@
     "family_mode": false,
     "audience": true,
     "drawing": true,
-    "game_length": 25
+    "game_length": 25,
+    "steam_id": 1005300
   },
   {
     "id": 27,
@@ -346,7 +372,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 15
+    "game_length": 15,
+    "steam_id": 1005300
   },
   {
     "id": 28,
@@ -359,7 +386,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 25
+    "game_length": 25,
+    "steam_id": 1005300
   },
   {
     "id": 29,
@@ -372,7 +400,8 @@
     "family_mode": true,
     "audience": true,
     "drawing": false,
-    "game_length": 10
+    "game_length": 10,
+    "steam_id": 1005300
   },
   {
     "id": 30,
@@ -384,7 +413,8 @@
     "img": "push.jpg",
     "family_mode": true,
     "audience": false,
-    "drawing": true
+    "drawing": true,
+    "steam_id": 1005300
   },
   {
     "id": 31,
@@ -397,6 +427,7 @@
     "family_mode": true,
     "audience": true,
     "drawing": true,
-    "game_length": 20
+    "game_length": 20,
+    "steam_id": 442070
   }
 ]

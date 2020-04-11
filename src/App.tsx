@@ -109,6 +109,7 @@ function App() {
                             drawing={game.drawing}
                             game_length={game.game_length}
                             show_images={showImages}
+                            steam_id={game.steam_id}
                           />
                         ))}
                       </tbody>
