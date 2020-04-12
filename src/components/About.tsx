@@ -29,7 +29,7 @@ const About = () => {
           <p>Involves drawing pictures on your screen, some games allow you to turn off drawing</p>
 
           <h3>About</h3>
-          <p>This site is unofficial and not affiliated with Jackbox Games. Made in React by <a href="http://www.twitter.com/ryne_ee" target="_blank">@ryne_ee</a>.</p>
+          <p>This site is unofficial and not affiliated with Jackbox Games. Made in React by <a href="http://www.twitter.com/ryne_ee" rel="noopener noreferrer" target="_blank">@ryne_ee</a>.</p>
         </section>
       </Col>
     </Row>

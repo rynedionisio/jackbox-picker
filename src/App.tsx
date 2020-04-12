@@ -30,7 +30,13 @@ function App() {
     4: true,
     5: true,
     6: true,
-    22: true
+    drawful2: true
+  });
+  const [filterChecks, setFilterChecks] = useState<any>({
+    extended_timers: false,
+    family_mode: false,
+    audience: false,
+    drawing: false
   });
 
   const hideMobileCell = "d-none d-md-table-cell";
@@ -51,10 +57,19 @@ function App() {
     setjbGames({...jbGames, [newValue.name] : newValue.checked });
   }
 
+  const handleFilterChecksChange = (newValue: any) => {
+    setFilterChecks({...filterChecks, [newValue.name] : newValue.checked });
+  }
+
   const filteredList = gamesList && gamesList.length > 0 && gamesList.filter((game) => {
-    return !players || (game.min_players <= players  && players <= game.max_players);
+    return !players || (game.min_players <= players && players <= game.max_players);
   }).filter((game) => {
     return jbGames[game.pack];
+  }).filter((game) => {
+    return (!filterChecks.extended_timers || game.extended_timers) &&
+      (!filterChecks.family_mode || game.family_mode) &&
+      (!filterChecks.audience || game.audience) &&
+      (!filterChecks.drawing || game.drawing);
   });
 
   return (
@@ -77,7 +92,9 @@ function App() {
                     onShowImagesChange={handleShowImagesChange}
                     onPlayersChange={handlePlayersChange}    
                     onJbGamesChange={handleJbGamesChange}
-                    jbGames={jbGames}          
+                    jbGames={jbGames}
+                    filterChecks={filterChecks}
+                    onFilterChecksChange={handleFilterChecksChange}        
                   />
                 </Col> 
               </Row>
@@ -118,11 +135,11 @@ function App() {
                       </tbody>
                     </Table>
                   )}
-                  {!filteredList || filteredList.length === 0 && (
+                  {!filteredList || (filteredList.length === 0 && (
                     <Alert variant="warning">
                       No results found, please adjust your filters
                     </Alert>
-                  )}
+                  ))}
                 </Col>
               </Row>
             </Route>

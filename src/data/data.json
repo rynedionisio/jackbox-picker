@@ -419,7 +419,7 @@
   {
     "id": 31,
     "title": "Drawful 2",
-    "pack": 22,
+    "pack": "drawful2",
     "min_players": 3,
     "max_players": 8,
     "extended_timers": true,

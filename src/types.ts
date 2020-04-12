@@ -2,7 +2,7 @@ namespace Types {
   export interface GamesInterface {
     id?: number;
     title: string;
-    pack: number;
+    pack: number | string;
     min_players: number;
     max_players: number;
     extended_timers: boolean;
@@ -24,6 +24,8 @@ namespace Types {
     onPlayersChange: any;
     onJbGamesChange: any;
     jbGames: any;
+    filterChecks: any;
+    onFilterChecksChange: any;
   }
 
   export interface GamesAppInterface extends GamesInterface {
