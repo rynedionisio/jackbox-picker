@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/jackbox-picker/static/css/main.a6451731.chunk.css",
-    "main.js": "/jackbox-picker/static/js/main.2978e1fd.chunk.js",
-    "main.js.map": "/jackbox-picker/static/js/main.2978e1fd.chunk.js.map",
+    "main.js": "/jackbox-picker/static/js/main.c4e90e27.chunk.js",
+    "main.js.map": "/jackbox-picker/static/js/main.c4e90e27.chunk.js.map",
     "runtime-main.js": "/jackbox-picker/static/js/runtime-main.6a957121.js",
     "runtime-main.js.map": "/jackbox-picker/static/js/runtime-main.6a957121.js.map",
     "static/css/2.de424728.chunk.css": "/jackbox-picker/static/css/2.de424728.chunk.css",
-    "static/js/2.3a9bb769.chunk.js": "/jackbox-picker/static/js/2.3a9bb769.chunk.js",
-    "static/js/2.3a9bb769.chunk.js.map": "/jackbox-picker/static/js/2.3a9bb769.chunk.js.map",
+    "static/js/2.cb397a87.chunk.js": "/jackbox-picker/static/js/2.cb397a87.chunk.js",
+    "static/js/2.cb397a87.chunk.js.map": "/jackbox-picker/static/js/2.cb397a87.chunk.js.map",
     "index.html": "/jackbox-picker/index.html",
-    "precache-manifest.b010b2108448d5a0504a40f23b5a6142.js": "/jackbox-picker/precache-manifest.b010b2108448d5a0504a40f23b5a6142.js",
+    "precache-manifest.054306b4deb90a243447320dba695b16.js": "/jackbox-picker/precache-manifest.054306b4deb90a243447320dba695b16.js",
     "service-worker.js": "/jackbox-picker/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/jackbox-picker/static/css/2.de424728.chunk.css.map",
     "static/css/main.a6451731.chunk.css.map": "/jackbox-picker/static/css/main.a6451731.chunk.css.map",
-    "static/js/2.3a9bb769.chunk.js.LICENSE.txt": "/jackbox-picker/static/js/2.3a9bb769.chunk.js.LICENSE.txt",
+    "static/js/2.cb397a87.chunk.js.LICENSE.txt": "/jackbox-picker/static/js/2.cb397a87.chunk.js.LICENSE.txt",
     "static/media/civic.jpg": "/jackbox-picker/static/media/civic.340ae1f7.jpg",
     "static/media/drawful2.jpg": "/jackbox-picker/static/media/drawful2.3b85f4d1.jpg",
     "static/media/fibbage3.png": "/jackbox-picker/static/media/fibbage3.14dcba03.png",
@@ -29,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.6a957121.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.3a9bb769.chunk.js",
+    "static/js/2.cb397a87.chunk.js",
     "static/css/main.a6451731.chunk.css",
-    "static/js/main.2978e1fd.chunk.js"
+    "static/js/main.c4e90e27.chunk.js"
   ]
 }

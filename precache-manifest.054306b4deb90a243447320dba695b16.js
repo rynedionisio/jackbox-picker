@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "317e33d585cea29936d4b308077f014f",
+    "revision": "01f4c7bdaed8277c85e5ee7744ca1048",
     "url": "/jackbox-picker/index.html"
   },
   {
-    "revision": "2670aff3498392c2c2f6",
+    "revision": "8e07ceceea7b50d044ac",
     "url": "/jackbox-picker/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "9fff78d6ff596663782e",
+    "revision": "6e91b343ed9183a9e568",
     "url": "/jackbox-picker/static/css/main.a6451731.chunk.css"
   },
   {
-    "revision": "2670aff3498392c2c2f6",
-    "url": "/jackbox-picker/static/js/2.3a9bb769.chunk.js"
+    "revision": "8e07ceceea7b50d044ac",
+    "url": "/jackbox-picker/static/js/2.cb397a87.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/jackbox-picker/static/js/2.3a9bb769.chunk.js.LICENSE.txt"
+    "url": "/jackbox-picker/static/js/2.cb397a87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9fff78d6ff596663782e",
-    "url": "/jackbox-picker/static/js/main.2978e1fd.chunk.js"
+    "revision": "6e91b343ed9183a9e568",
+    "url": "/jackbox-picker/static/js/main.c4e90e27.chunk.js"
   },
   {
     "revision": "12c6ece6bb5a63e19546",
