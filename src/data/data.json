@@ -214,7 +214,7 @@
     "min_players": 2,
     "max_players": 8,
     "extended_timers": true,
-    "img": "fibbage2.jpg",
+    "img": "fibbage3.png",
     "family_mode": true,
     "audience": true,
     "drawing": false,
