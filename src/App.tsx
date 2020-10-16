@@ -30,6 +30,7 @@ function App() {
     4: true,
     5: true,
     6: true,
+    7: true,
     drawful2: true
   });
   const [filterChecks, setFilterChecks] = useState<any>({
