@@ -28,6 +28,12 @@ header {
 form, table, section {
   background: #fff;
 }
+td {
+  .img-fluid {
+    max-width: 300px;
+    width: 100%;
+  }
+}
 
 form, section {
   padding: 5px;
