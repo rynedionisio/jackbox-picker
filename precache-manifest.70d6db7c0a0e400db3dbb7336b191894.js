@@ -1,35 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc25358a176ae1fdbcf018cd5b1b2522",
+    "revision": "718fd1bfdc2c5634301470f0dd32ffed",
     "url": "/jackbox-picker/index.html"
   },
   {
-    "revision": "8e07ceceea7b50d044ac",
+    "revision": "f18c8a1b7f3aa9c12032",
     "url": "/jackbox-picker/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "fecac1498c95821dbc92",
+    "revision": "9aae6db0a0ca0136cc90",
     "url": "/jackbox-picker/static/css/main.a6451731.chunk.css"
   },
   {
-    "revision": "8e07ceceea7b50d044ac",
-    "url": "/jackbox-picker/static/js/2.cb397a87.chunk.js"
+    "revision": "f18c8a1b7f3aa9c12032",
+    "url": "/jackbox-picker/static/js/2.3eabe853.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/jackbox-picker/static/js/2.cb397a87.chunk.js.LICENSE.txt"
+    "url": "/jackbox-picker/static/js/2.3eabe853.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fecac1498c95821dbc92",
-    "url": "/jackbox-picker/static/js/main.ae8825a2.chunk.js"
+    "revision": "9aae6db0a0ca0136cc90",
+    "url": "/jackbox-picker/static/js/main.1e70b6f9.chunk.js"
   },
   {
     "revision": "12c6ece6bb5a63e19546",
     "url": "/jackbox-picker/static/js/runtime-main.6a957121.js"
   },
   {
+    "revision": "2ad10486b54d7b09844e4d9815257f34",
+    "url": "/jackbox-picker/static/media/blather.2ad10486.webp"
+  },
+  {
+    "revision": "b00b91ff4f59beacc26bf93d1248275c",
+    "url": "/jackbox-picker/static/media/champd.b00b91ff.webp"
+  },
+  {
     "revision": "340ae1f732283231ba34e46eed24f697",
     "url": "/jackbox-picker/static/media/civic.340ae1f7.jpg"
+  },
+  {
+    "revision": "f18a6c44e3681c15ce9fb794f96cd50e",
+    "url": "/jackbox-picker/static/media/devils.f18a6c44.webp"
   },
   {
     "revision": "3b85f4d106c6502c13821e3fc1af4a1d",
@@ -60,8 +72,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jackbox-picker/static/media/patently.1fbdaae9.png"
   },
   {
+    "revision": "767f89f968e3a385bec7892c905a2db9",
+    "url": "/jackbox-picker/static/media/quiplash3.767f89f9.webp"
+  },
+  {
     "revision": "72dabfd71da493df8e2cf13b5c013218",
     "url": "/jackbox-picker/static/media/supria-sans-heavy.72dabfd7.otf"
+  },
+  {
+    "revision": "f195ba96d8ff0aa7e28abef0afcfe9f7",
+    "url": "/jackbox-picker/static/media/talking.f195ba96.webp"
   },
   {
     "revision": "ae47f7d6ddd51e6d7c2686087d8fe8c5",
