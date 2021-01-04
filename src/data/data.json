@@ -453,7 +453,7 @@
     "extended_timers": false,
     "img": "champd.webp",
     "family_mode": true,
-    "audience": false,
+    "audience": true,
     "drawing": true,
     "game_length": 20,
     "steam_id": 1211630
