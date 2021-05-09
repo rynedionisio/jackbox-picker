@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'supria-sans-heavy';
-  src: local('supria-sans-heavy'), url(./fonts/supria-sans-heavy.otf) format('opentype');
+  src: local('supria-sans-heavy'),
+    url(./fonts/supria-sans-heavy.otf) format('opentype');
 }
 
-html, body {
+html,
+body {
   background: #d3d3d3;
 }
 
@@ -16,7 +18,9 @@ header {
   background: #4254f4;
   padding: 5px 0;
 
-  a, a:active, a:visited {
+  a,
+  a:active,
+  a:visited {
     color: #fff;
   }
 
@@ -25,9 +29,16 @@ header {
   }
 }
 
-form, table, section {
+form,
+table,
+section {
   background: #fff;
 }
+
+#selection-area {
+  background: #fff;
+}
+
 td {
   .img-fluid {
     max-width: 300px;
@@ -35,7 +46,8 @@ td {
   }
 }
 
-form, section {
+form,
+section {
   padding: 5px;
 }
 
