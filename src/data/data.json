@@ -422,7 +422,7 @@
     "pack": 7,
     "min_players": 3,
     "max_players": 8,
-    "extendedtimers": true,
+    "extended_timers": true,
     "img": "quiplash3.webp",
     "family_mode": true,
     "audience": true,
