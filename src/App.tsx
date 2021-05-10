@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './App.scss';
+import React, { useEffect, useState } from 'react'
+import './App.scss'
 
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
@@ -7,74 +7,95 @@ import Row from 'react-bootstrap/Row'
 import Table from 'react-bootstrap/Table'
 import Alert from 'react-bootstrap/Table'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import Types from './types';
-import Header from './components/Header';
-import Filter from './components/Filter';
-import Game from './components/Game';
-import About from './components/About';
+import Types from './types'
+import Header from './components/Header'
+import Filter from './components/Filter'
+import Game from './components/Game'
+import About from './components/About'
+
+const DEFAULT_JB_GAMES = {
+  1: true,
+  2: true,
+  3: true,
+  4: true,
+  5: true,
+  6: true,
+  7: true,
+  drawful2: true,
+}
+const LOCAL_STORATE_GAMESTATE_KEY = 'gamesState'
 
 function App() {
-  const [gamesList, setGamesList] = useState<Types.GamesInterface[]>();
-  const [showImages, setShowImages] = useState<boolean>(true);
-  const [players, setPlayers] = useState<number>();
-  const [jbGames, setjbGames] = useState<any>({
-    1: true,
-    2: true,
-    3: true,
-    4: true,
-    5: true,
-    6: true,
-    7: true,
-    drawful2: true
-  });
+  const savedData = JSON.parse(
+    localStorage.getItem(LOCAL_STORATE_GAMESTATE_KEY) || '{}'
+  )
+  const [gamesList, setGamesList] = useState<Types.GamesInterface[]>()
+  const [showImages, setShowImages] = useState<boolean>(true)
+  const [players, setPlayers] = useState<number>()
+  const [jbGames, setjbGames] = useState<any>(
+    Object.keys(savedData).length === 0 ? DEFAULT_JB_GAMES : savedData
+  )
+
   const [filterChecks, setFilterChecks] = useState<any>({
     extended_timers: false,
     family_mode: false,
     audience: false,
-    drawing: false
-  });
+    drawing: false,
+  })
 
-  const hideMobileCell = "d-none d-md-table-cell";
+  const hideMobileCell = 'd-none d-md-table-cell'
 
   useEffect(() => {
-    setGamesList(require('./data/data.json'));
-  }, []);
+    setGamesList(require('./data/data.json'))
+  }, [])
 
   const handleShowImagesChange = (newValue: boolean) => {
-    setShowImages(newValue);
+    setShowImages(newValue)
   }
 
   const handlePlayersChange = (newValue: number) => {
-    setPlayers(newValue);
+    setPlayers(newValue)
   }
 
   const handleJbGamesChange = (newValue: any) => {
-    setjbGames({...jbGames, [newValue.name] : newValue.checked });
+    const newJBGamesState = { ...jbGames, [newValue.name]: newValue.checked }
+    setjbGames(newJBGamesState)
+    localStorage.setItem(
+      LOCAL_STORATE_GAMESTATE_KEY,
+      JSON.stringify(newJBGamesState)
+    )
   }
 
   const handleFilterChecksChange = (newValue: any) => {
-    setFilterChecks({...filterChecks, [newValue.name] : newValue.checked });
+    setFilterChecks({ ...filterChecks, [newValue.name]: newValue.checked })
   }
 
-  const filteredList = gamesList && gamesList.length > 0 && gamesList.filter((game) => {
-    return !players || (game.min_players <= players && players <= game.max_players);
-  }).filter((game) => {
-    return jbGames[game.pack];
-  }).filter((game) => {
-    return (!filterChecks.extended_timers || game.extended_timers) &&
-      (!filterChecks.family_mode || game.family_mode) &&
-      (!filterChecks.audience || game.audience) &&
-      (!filterChecks.drawing || game.drawing);
-  });
+  const filteredList =
+    gamesList &&
+    gamesList.length > 0 &&
+    gamesList
+      .filter((game) => {
+        return (
+          !players ||
+          (game.min_players <= players && players <= game.max_players)
+        )
+      })
+      .filter((game) => {
+        return jbGames[game.pack]
+      })
+      .filter((game) => {
+        return (
+          (!filterChecks.extended_timers || game.extended_timers) &&
+          (!filterChecks.family_mode || game.family_mode) &&
+          (!filterChecks.audience || game.audience) &&
+          (!filterChecks.drawing || game.drawing)
+        )
+      })
 
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
         <Container>
           <Row>
@@ -83,26 +104,26 @@ function App() {
             </Col>
           </Row>
           <Switch>
-            <Route path="/jackbox-picker/about">
+            <Route path='/jackbox-picker/about'>
               <About />
             </Route>
-            <Route path="/jackbox-picker">
+            <Route path='/jackbox-picker'>
               <Row>
                 <Col>
                   <Filter
                     onShowImagesChange={handleShowImagesChange}
-                    onPlayersChange={handlePlayersChange}    
+                    onPlayersChange={handlePlayersChange}
                     onJbGamesChange={handleJbGamesChange}
                     jbGames={jbGames}
                     filterChecks={filterChecks}
-                    onFilterChecksChange={handleFilterChecksChange}        
+                    onFilterChecksChange={handleFilterChecksChange}
                   />
-                </Col> 
+                </Col>
               </Row>
               <Row>
                 <Col>
                   {!!filteredList && !!filteredList.length && (
-                    <Table striped bordered hover size="sm">
+                    <Table striped bordered hover size='sm'>
                       <thead>
                         <tr>
                           <th></th>
@@ -116,7 +137,7 @@ function App() {
                         </tr>
                       </thead>
                       <tbody>
-                        {filteredList.map(game => (
+                        {filteredList.map((game) => (
                           <Game
                             key={game.id}
                             title={game.title}
@@ -136,11 +157,12 @@ function App() {
                       </tbody>
                     </Table>
                   )}
-                  {!filteredList || (filteredList.length === 0 && (
-                    <Alert variant="warning">
-                      No results found, please adjust your filters
-                    </Alert>
-                  ))}
+                  {!filteredList ||
+                    (filteredList.length === 0 && (
+                      <Alert variant='warning'>
+                        No results found, please adjust your filters
+                      </Alert>
+                    ))}
                 </Col>
               </Row>
             </Route>
@@ -148,7 +170,7 @@ function App() {
         </Container>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
