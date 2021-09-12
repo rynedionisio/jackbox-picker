@@ -26,6 +26,8 @@ namespace Types {
     jbGames: any;
     filterChecks: any;
     onFilterChecksChange: any;
+    drawingSelect: any;
+    onDrawingSelectChange: any;
   }
 
   export interface GamesAppInterface extends GamesInterface {

@@ -33,11 +33,13 @@ function App() {
     7: true,
     drawful2: true
   });
+  const [drawingSelect, setDrawingSelect] = useState<any>({
+    drawing: ["any"]
+  });
   const [filterChecks, setFilterChecks] = useState<any>({
     extended_timers: false,
     family_mode: false,
-    audience: false,
-    drawing: false
+    audience: false
   });
 
   const hideMobileCell = "d-none d-md-table-cell";
@@ -58,6 +60,10 @@ function App() {
     setjbGames({...jbGames, [newValue.name] : newValue.checked });
   }
 
+  const handleDrawingSelectChange = (newValue: any) => {
+    setDrawingSelect({...drawingSelect, drawing : newValue.value.split('|') });
+  }
+
   const handleFilterChecksChange = (newValue: any) => {
     setFilterChecks({...filterChecks, [newValue.name] : newValue.checked });
   }
@@ -67,10 +73,12 @@ function App() {
   }).filter((game) => {
     return jbGames[game.pack];
   }).filter((game) => {
+    return drawingSelect.drawing.includes("any") ||
+      drawingSelect.drawing.includes(game.drawing);
+  }).filter((game) => {
     return (!filterChecks.extended_timers || game.extended_timers) &&
       (!filterChecks.family_mode || game.family_mode) &&
-      (!filterChecks.audience || game.audience) &&
-      (!filterChecks.drawing || game.drawing);
+      (!filterChecks.audience || game.audience);
   });
 
   return (
@@ -94,6 +102,8 @@ function App() {
                     onPlayersChange={handlePlayersChange}    
                     onJbGamesChange={handleJbGamesChange}
                     jbGames={jbGames}
+                    drawingSelect={drawingSelect}
+                    onDrawingSelectChange={handleDrawingSelectChange}
                     filterChecks={filterChecks}
                     onFilterChecksChange={handleFilterChecksChange}        
                   />

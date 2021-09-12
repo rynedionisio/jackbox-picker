@@ -8,6 +8,8 @@ const Filter: React.FC<Types.FilterInterface> = (
     onPlayersChange,
     onJbGamesChange,
     jbGames,
+    drawingSelect,
+    onDrawingSelectChange,
     filterChecks,
     onFilterChecksChange }
   ) => {
@@ -24,6 +26,10 @@ const Filter: React.FC<Types.FilterInterface> = (
 
   function handleJbGamesChange(event: any) {
     onJbGamesChange(event.target);
+  }
+
+  function handleDrawingSelectChange(event: any) {
+    onDrawingSelectChange(event.target);
   }
 
   function handleFilterChecksChange(event: any) {
@@ -88,11 +94,6 @@ const filterCheckboxes = [
     name: 'audience',
     key: 'audience',
     label: 'Audience',
-  },
-  {
-    name: 'drawing',
-    key: 'drawing',
-    label: 'Drawing involved',
   }
 ];
 
@@ -123,6 +124,18 @@ const filterCheckboxes = [
           placeholder="Number of players"
           aria-label="Number of players"
         />
+      </Form.Group>
+      <Form.Group>
+        <Form.Control as="select"
+          onChange={handleDrawingSelectChange}
+          type="select"
+        >
+          <option value="any">Don't filter games based on amount of drawing</option>
+          <option value="no">Show only games with no drawing</option>
+          <option value="no|occasionally">Show only games with no or occasional drawing</option>
+          <option value="occasionally|primarily">Show only games with occasional drawing or which are primarily drawing</option>
+          <option value="primarily">Show only games which are primarily drawing</option>
+        </Form.Control>
       </Form.Group>
       Hide games that don't have:
       <Form.Group>
