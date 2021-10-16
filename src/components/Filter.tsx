@@ -73,6 +73,11 @@ const Filter: React.FC<Types.FilterInterface> = (
       label: '7',
     },
     {
+      name: '8',
+      key: 8,
+      label: '8',
+    },
+    {
       name: 'drawful2',
       key: 'drawful2',
       label: 'Drawful 2',

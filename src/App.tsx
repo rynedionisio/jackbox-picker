@@ -31,6 +31,7 @@ function App() {
     5: true,
     6: true,
     7: true,
+	8: true,
     drawful2: true
   });
   const [drawingSelect, setDrawingSelect] = useState<any>({
