@@ -25,11 +25,11 @@ const DEFAULT_JB_GAMES = {
   7: true,
   drawful2: true,
 }
-const LOCAL_STORATE_GAMESTATE_KEY = 'gamesState'
+const LOCAL_STORAGE_GAMESTATE_KEY = 'gamesState'
 
 function App() {
   const savedData = JSON.parse(
-    localStorage.getItem(LOCAL_STORATE_GAMESTATE_KEY) || '{}'
+    localStorage.getItem(LOCAL_STORAGE_GAMESTATE_KEY) || '{}'
   )
   const [gamesList, setGamesList] = useState<Types.GamesInterface[]>()
   const [showImages, setShowImages] = useState<boolean>(true)
@@ -37,13 +37,15 @@ function App() {
   const [jbGames, setjbGames] = useState<any>(
     Object.keys(savedData).length === 0 ? DEFAULT_JB_GAMES : savedData
   )
-
+  const [drawingSelect, setDrawingSelect] = useState<any>({
+    drawing: ["any"]
+  });
   const [filterChecks, setFilterChecks] = useState<any>({
     extended_timers: false,
     family_mode: false,
     audience: false,
     drawing: false,
-  })
+  });
 
   const hideMobileCell = 'd-none d-md-table-cell'
 
@@ -63,36 +65,31 @@ function App() {
     const newJBGamesState = { ...jbGames, [newValue.name]: newValue.checked }
     setjbGames(newJBGamesState)
     localStorage.setItem(
-      LOCAL_STORATE_GAMESTATE_KEY,
+      LOCAL_STORAGE_GAMESTATE_KEY,
       JSON.stringify(newJBGamesState)
     )
+  }
+
+  const handleDrawingSelectChange = (newValue: any) => {
+    setDrawingSelect({...drawingSelect, drawing : newValue.value.split('|') });
   }
 
   const handleFilterChecksChange = (newValue: any) => {
     setFilterChecks({ ...filterChecks, [newValue.name]: newValue.checked })
   }
 
-  const filteredList =
-    gamesList &&
-    gamesList.length > 0 &&
-    gamesList
-      .filter((game) => {
-        return (
-          !players ||
-          (game.min_players <= players && players <= game.max_players)
-        )
-      })
-      .filter((game) => {
-        return jbGames[game.pack]
-      })
-      .filter((game) => {
-        return (
-          (!filterChecks.extended_timers || game.extended_timers) &&
-          (!filterChecks.family_mode || game.family_mode) &&
-          (!filterChecks.audience || game.audience) &&
-          (!filterChecks.drawing || game.drawing)
-        )
-      })
+  const filteredList = gamesList && gamesList.length > 0 && gamesList.filter((game) => {
+    return !players || (game.min_players <= players && players <= game.max_players);
+  }).filter((game) => {
+    return jbGames[game.pack];
+  }).filter((game) => {
+    return drawingSelect.drawing.includes("any") ||
+      drawingSelect.drawing.includes(game.drawing);
+  }).filter((game) => {
+    return (!filterChecks.extended_timers || game.extended_timers) &&
+      (!filterChecks.family_mode || game.family_mode) &&
+      (!filterChecks.audience || game.audience);
+  });
 
   return (
     <div className='App'>
@@ -115,6 +112,8 @@ function App() {
                     onPlayersChange={handlePlayersChange}
                     onJbGamesChange={handleJbGamesChange}
                     jbGames={jbGames}
+                    drawingSelect={drawingSelect}
+                    onDrawingSelectChange={handleDrawingSelectChange}
                     filterChecks={filterChecks}
                     onFilterChecksChange={handleFilterChecksChange}
                   />

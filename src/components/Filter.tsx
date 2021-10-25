@@ -1,16 +1,17 @@
 import React from 'react'
 import Types from '../types'
 
-import Form from 'react-bootstrap/Form'
+import Form from 'react-bootstrap/Form';
 
-const Filter: React.FC<Types.FilterInterface> = ({
-  onShowImagesChange,
-  onPlayersChange,
-  onJbGamesChange,
-  jbGames,
-  filterChecks,
-  onFilterChecksChange,
-}) => {
+const Filter: React.FC<Types.FilterInterface> = (
+  { onShowImagesChange,
+    onPlayersChange,
+    onJbGamesChange,
+    jbGames,
+    onDrawingSelectChange,
+    filterChecks,
+    onFilterChecksChange }
+  ) => {
   function handleShowImagesChange(event: any) {
     onShowImagesChange(event.target.checked)
   }
@@ -21,6 +22,10 @@ const Filter: React.FC<Types.FilterInterface> = ({
 
   function handleJbGamesChange(event: any) {
     onJbGamesChange(event.target)
+  }
+
+  function handleDrawingSelectChange(event: any) {
+    onDrawingSelectChange(event.target);
   }
 
   function handleFilterChecksChange(event: any) {
@@ -62,6 +67,11 @@ const Filter: React.FC<Types.FilterInterface> = ({
       name: '7',
       key: 7,
       label: '7',
+    },
+    {
+      name: '8',
+      key: 8,
+      label: '8',
     },
     {
       name: 'drawful2',
@@ -121,6 +131,19 @@ const Filter: React.FC<Types.FilterInterface> = ({
           placeholder='Number of players'
           aria-label='Number of players'
         />
+      </Form.Group>
+      <Form.Group>
+        <Form.Control as="select"
+          onChange={handle
+          Change}
+          type="select"
+        >
+          <option value="any">Don't filter games based on amount of drawing</option>
+          <option value="no">Show only games with no drawing</option>
+          <option value="no|occasionally">Show only games with no or occasional drawing</option>
+          <option value="occasionally|primarily">Show only games with occasional drawing or which are primarily drawing</option>
+          <option value="primarily">Show only games which are primarily drawing</option>
+        </Form.Control>
       </Form.Group>
       Hide games that don't have:
       <Form.Group>

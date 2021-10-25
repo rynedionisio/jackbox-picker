@@ -60,7 +60,7 @@ const Game: React.FC<Types.GamesAppInterface> = (
         {BooleanEmoji(audience)}
       </td>
       <td className="d-none d-md-table-cell">
-        {BooleanEmoji(drawing)}
+        {drawing}
       </td>
     </tr>
   );
