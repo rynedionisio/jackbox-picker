@@ -134,8 +134,7 @@ const Filter: React.FC<Types.FilterInterface> = (
       </Form.Group>
       <Form.Group>
         <Form.Control as="select"
-          onChange={handle
-          Change}
+          onChange={handleDrawingSelectChange}
           type="select"
         >
           <option value="any">Don't filter games based on amount of drawing</option>
