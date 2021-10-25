@@ -1,5 +1,5 @@
-import React from 'react';
-import Types from '../types';
+import React from 'react'
+import Types from '../types'
 
 import Form from 'react-bootstrap/Form';
 
@@ -8,24 +8,20 @@ const Filter: React.FC<Types.FilterInterface> = (
     onPlayersChange,
     onJbGamesChange,
     jbGames,
-    drawingSelect,
     onDrawingSelectChange,
     filterChecks,
     onFilterChecksChange }
   ) => {
-
   function handleShowImagesChange(event: any) {
-    onShowImagesChange(event.target.checked);
+    onShowImagesChange(event.target.checked)
   }
-
 
   function handlePlayersChange(event: any) {
-    onPlayersChange(event.target.value);
+    onPlayersChange(event.target.value)
   }
-  
 
   function handleJbGamesChange(event: any) {
-    onJbGamesChange(event.target);
+    onJbGamesChange(event.target)
   }
 
   function handleDrawingSelectChange(event: any) {
@@ -33,7 +29,7 @@ const Filter: React.FC<Types.FilterInterface> = (
   }
 
   function handleFilterChecksChange(event: any) {
-    onFilterChecksChange(event.target);
+    onFilterChecksChange(event.target)
   }
 
   const packCheckboxes = [
@@ -82,57 +78,64 @@ const Filter: React.FC<Types.FilterInterface> = (
       key: 'drawful2',
       label: 'Drawful 2',
     },
-];
+  ]
 
-const filterCheckboxes = [
-  {
-    name: 'extended_timers',
-    key: 'extended_timers',
-    label: 'Longer timers',
-  },
-  {
-    name: 'family_mode',
-    key: 'family_mode',
-    label: 'Family friendly',
-  },
-  {
-    name: 'audience',
-    key: 'audience',
-    label: 'Audience',
-  }
-];
+  const filterCheckboxes = [
+    {
+      name: 'extended_timers',
+      key: 'extended_timers',
+      label: 'Longer timers',
+    },
+    {
+      name: 'family_mode',
+      key: 'family_mode',
+      label: 'Family friendly',
+    },
+    {
+      name: 'audience',
+      key: 'audience',
+      label: 'Audience',
+    },
+    {
+      name: 'drawing',
+      key: 'drawing',
+      label: 'Drawing involved',
+    },
+  ]
 
   return (
     <Form>
-      <p>Enter your filter criteria below. Clicking a game image will launch that pack in Steam.</p>
+      <p>
+        Enter your filter criteria below. Clicking a game image will launch that
+        pack in Steam.
+      </p>
       Select your Jackbox Packs:
       <Form.Group>
-        {
-          packCheckboxes.map(item => (
-            <Form.Check
-              key={item.key}
-              name={item.name}
-              label={item.label}
-              id={item.name}
-              inline
-              defaultChecked
-              value={jbGames[item.name]}
-              onChange={handleJbGamesChange}
-            />
-          ))
-        }
+        {packCheckboxes.map((item) => (
+          <Form.Check
+            key={item.key}
+            name={item.name}
+            label={item.label}
+            id={item.name}
+            inline
+            checked={jbGames[item.name]}
+            value={jbGames[item.name]}
+            onChange={handleJbGamesChange}
+          />
+        ))}
       </Form.Group>
-      <Form.Group controlId="players-input">
+      <Form.Group controlId='players-input'>
         <Form.Control
           onChange={handlePlayersChange}
-          type="tel"
-          placeholder="Number of players"
-          aria-label="Number of players"
+          type='tel'
+          placeholder='Number of players'
+          aria-label='Number of players'
         />
       </Form.Group>
       <Form.Group>
         <Form.Control as="select"
-          onChange={handleDrawingSelectChange}
+          onChange={handle
+          Change}
           type="select"
         >
           <option value="any">Don't filter games based on amount of drawing</option>
@@ -144,29 +147,27 @@ const filterCheckboxes = [
       </Form.Group>
       Hide games that don't have:
       <Form.Group>
-        {
-          filterCheckboxes.map(item => (
-            <Form.Check
-              key={item.key}
-              name={item.name}
-              label={item.label}
-              id={item.name}
-              inline
-              value={filterChecks[item.name]}
-              onChange={handleFilterChecksChange}
-            />
-          ))
-        }
+        {filterCheckboxes.map((item) => (
+          <Form.Check
+            key={item.key}
+            name={item.name}
+            label={item.label}
+            id={item.name}
+            inline
+            value={filterChecks[item.name]}
+            onChange={handleFilterChecksChange}
+          />
+        ))}
       </Form.Group>
-      <Form.Check 
-        type="switch"
-        id="show-images-switch"
-        label="Show game images"
+      <Form.Check
+        type='switch'
+        id='show-images-switch'
+        label='Show game images'
         onClick={handleShowImagesChange}
         defaultChecked
       />
     </Form>
-  );
-};
+  )
+}
 
-export default Filter;
+export default Filter
