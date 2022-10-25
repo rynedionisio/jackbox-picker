@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "844dc01168a400c6f070dd262d11fc7e",
+    "revision": "f06ee156053e1b7434896be78063fa7f",
     "url": "/jackbox-picker/index.html"
   },
   {
-    "revision": "ae9814228323a0d0fe33",
+    "revision": "2f8d47ed6ae43e671528",
     "url": "/jackbox-picker/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "cf1ebf913dd34934913b",
+    "revision": "2c37a0d1f5035c657bba",
     "url": "/jackbox-picker/static/css/main.867ba02b.chunk.css"
   },
   {
-    "revision": "ae9814228323a0d0fe33",
-    "url": "/jackbox-picker/static/js/2.3722fd1d.chunk.js"
+    "revision": "2f8d47ed6ae43e671528",
+    "url": "/jackbox-picker/static/js/2.3a63c4db.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/jackbox-picker/static/js/2.3722fd1d.chunk.js.LICENSE.txt"
+    "url": "/jackbox-picker/static/js/2.3a63c4db.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf1ebf913dd34934913b",
-    "url": "/jackbox-picker/static/js/main.8d53d30e.chunk.js"
+    "revision": "2c37a0d1f5035c657bba",
+    "url": "/jackbox-picker/static/js/main.e5724c5b.chunk.js"
   },
   {
     "revision": "12c6ece6bb5a63e19546",
@@ -56,6 +56,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jackbox-picker/static/media/fibbage3.14dcba03.png"
   },
   {
+    "revision": "be251ff38808894ebf99a5d25e134461",
+    "url": "/jackbox-picker/static/media/fibbage4.be251ff3.webp"
+  },
+  {
     "revision": "1418e13233461dc273c4230c9e6b160f",
     "url": "/jackbox-picker/static/media/guess.1418e132.jpg"
   },
@@ -68,12 +72,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jackbox-picker/static/media/joke.b81f888b.jpg"
   },
   {
+    "revision": "cc7912711beb4f357cff2617b80ce63a",
+    "url": "/jackbox-picker/static/media/junktopia.cc791271.webp"
+  },
+  {
     "revision": "e3291d79b635b7fb8f15292890fab1a6",
     "url": "/jackbox-picker/static/media/mad.e3291d79.jpg"
   },
   {
     "revision": "dc65d347abf82ce8babda1afe78e2ef5",
     "url": "/jackbox-picker/static/media/monster.dc65d347.jpg"
+  },
+  {
+    "revision": "e0c01adbd0badebbc7b6f3179efb69db",
+    "url": "/jackbox-picker/static/media/nonsensory.e0c01adb.webp"
   },
   {
     "revision": "1fbdaae957ad36acbdaa009ae30f8c1b",
@@ -86,6 +98,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "767f89f968e3a385bec7892c905a2db9",
     "url": "/jackbox-picker/static/media/quiplash3.767f89f9.webp"
+  },
+  {
+    "revision": "ae61a998ff5076a8bae6e9a944fec0fb",
+    "url": "/jackbox-picker/static/media/quixort.ae61a998.webp"
+  },
+  {
+    "revision": "77a12f5a739a83ce57a1585fa399ec1f",
+    "url": "/jackbox-picker/static/media/roomerang.77a12f5a.webp"
   },
   {
     "revision": "72dabfd71da493df8e2cf13b5c013218",
