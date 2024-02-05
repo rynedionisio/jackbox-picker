@@ -18,8 +18,8 @@ const Header = () => {
           </Col>
           <Col>
             <h2>Jackbox pack selector</h2>
-
-            <Link to="/jackbox-picker">Home</Link><Link to="/jackbox-picker/about">About</Link>
+            <p>The good folks at Jackbox have created their much better looking (and more up-to-date) picker <Link to="https://www.jackboxgames.com/games">here</Link>. Check it out! I will no longer be updating this site as long as that one stays up. Took them long enough :)</p>
+            <Link className="homeLink" to="/jackbox-picker">Home</Link><Link to="/jackbox-picker/about">About</Link>
           </Col>
         </Row>
       </Container>

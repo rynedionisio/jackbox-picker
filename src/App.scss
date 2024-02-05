@@ -18,10 +18,15 @@ header {
 
   a, a:active, a:visited {
     color: #fff;
+    text-decoration: underline;
   }
 
-  a:first-of-type {
+  .homeLink {
     margin-right: 24px;
+  }
+
+  p {
+    color: #fff;
   }
 }
 

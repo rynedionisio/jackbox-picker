@@ -1,3 +1,7 @@
+### Read this first!
+
+The Jackbox team has released their own version of this picker which looks much better and they're probably getting paid to keep it updated. [Please visit it here](https://www.jackboxgames.com/games).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
