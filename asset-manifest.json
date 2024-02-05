@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/jackbox-picker/static/css/main.867ba02b.chunk.css",
-    "main.js": "/jackbox-picker/static/js/main.e5724c5b.chunk.js",
-    "main.js.map": "/jackbox-picker/static/js/main.e5724c5b.chunk.js.map",
+    "main.css": "/jackbox-picker/static/css/main.fb0dbc9f.chunk.css",
+    "main.js": "/jackbox-picker/static/js/main.f8b60447.chunk.js",
+    "main.js.map": "/jackbox-picker/static/js/main.f8b60447.chunk.js.map",
     "runtime-main.js": "/jackbox-picker/static/js/runtime-main.6a957121.js",
     "runtime-main.js.map": "/jackbox-picker/static/js/runtime-main.6a957121.js.map",
     "static/css/2.de424728.chunk.css": "/jackbox-picker/static/css/2.de424728.chunk.css",
-    "static/js/2.3a63c4db.chunk.js": "/jackbox-picker/static/js/2.3a63c4db.chunk.js",
-    "static/js/2.3a63c4db.chunk.js.map": "/jackbox-picker/static/js/2.3a63c4db.chunk.js.map",
+    "static/js/2.a6c11f26.chunk.js": "/jackbox-picker/static/js/2.a6c11f26.chunk.js",
+    "static/js/2.a6c11f26.chunk.js.map": "/jackbox-picker/static/js/2.a6c11f26.chunk.js.map",
     "index.html": "/jackbox-picker/index.html",
-    "precache-manifest.2e5e27f9ad6ad3398fd6c383afd2b2bc.js": "/jackbox-picker/precache-manifest.2e5e27f9ad6ad3398fd6c383afd2b2bc.js",
+    "precache-manifest.ec9733d1c93cc20ea6e2e71bef64aea7.js": "/jackbox-picker/precache-manifest.ec9733d1c93cc20ea6e2e71bef64aea7.js",
     "service-worker.js": "/jackbox-picker/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/jackbox-picker/static/css/2.de424728.chunk.css.map",
-    "static/css/main.867ba02b.chunk.css.map": "/jackbox-picker/static/css/main.867ba02b.chunk.css.map",
-    "static/js/2.3a63c4db.chunk.js.LICENSE.txt": "/jackbox-picker/static/js/2.3a63c4db.chunk.js.LICENSE.txt",
+    "static/css/main.fb0dbc9f.chunk.css.map": "/jackbox-picker/static/css/main.fb0dbc9f.chunk.css.map",
+    "static/js/2.a6c11f26.chunk.js.LICENSE.txt": "/jackbox-picker/static/js/2.a6c11f26.chunk.js.LICENSE.txt",
     "static/media/blather.webp": "/jackbox-picker/static/media/blather.2ad10486.webp",
     "static/media/champd.webp": "/jackbox-picker/static/media/champd.b00b91ff.webp",
     "static/media/civic.jpg": "/jackbox-picker/static/media/civic.340ae1f7.jpg",
@@ -44,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.6a957121.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.3a63c4db.chunk.js",
-    "static/css/main.867ba02b.chunk.css",
-    "static/js/main.e5724c5b.chunk.js"
+    "static/js/2.a6c11f26.chunk.js",
+    "static/css/main.fb0dbc9f.chunk.css",
+    "static/js/main.f8b60447.chunk.js"
   ]
 }
